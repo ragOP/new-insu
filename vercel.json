@@ -1,0 +1,19 @@
+{
+    "rewrites": [
+      {
+        "source": "/first",
+        "destination": "/first.html"
+    
+      },
+      {
+        "source": "/second",
+        "destination": "/second/index.html"
+    
+      },
+      {
+        "source": "/third",
+        "destination": "third/index.html"
+    
+      }
+    ]
+  }
