@@ -190,6 +190,19 @@
       #reviewSection {
         display: none;
       }
+      #reviewText{
+  opacity: 0;
+  animation: fadeInOut 0.8s infinite;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
 
       footer {
         margin-top: 20px;
@@ -596,7 +609,9 @@
       </div>
       <div id="reviewSection">
         <div class="bar"></div>
-        <div class="box" id="reviewText">Reviewing Your Answer…</div>
+                    <div class="box" >
+                        <p id="reviewText">Reviewing Your Answer…</p>
+        </div>
       </div>
       <div class="rating-wrap">
         <div class="rating-left">
