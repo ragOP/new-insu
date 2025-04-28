@@ -190,19 +190,27 @@
       #reviewSection {
         display: none;
       }
-      #reviewText{
-  opacity: 1;
-animation: fadeInOut 2s infinite alternate;
-}
+      #rreviewText {
+      font-size: 24px;
+      font-weight: bold;
+      opacity: 0;
+      animation: none;
+    }
 
-@keyframes fadeInOut {
-  0% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+    @keyframes glowFade {
+      0% {
+        opacity: 0;
+        /* text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 15px #00f; */
+      }
+      50% {
+        opacity: 1;
+        /* text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff; */
+      }
+      100% {
+        opacity: 0;
+        text-shadow: none;
+      }
+    }
 
       footer {
         margin-top: 20px;
@@ -853,42 +861,51 @@ animation: fadeInOut 2s infinite alternate;
     </div>
 
     <script>
-        const buttons = [
-          document.getElementById("startButton"),
-          document.getElementById("startButton1"),
-          document.getElementById("startButton2"),
-          document.getElementById("startButton3"),
-          document.getElementById("startButton4"),
-        ];
-      
-        const reviewSection = document.getElementById("reviewSection");
-        const reviewText = document.getElementById("reviewText");
-        const wrapper = document.getElementById("wrapper");
-      
-        buttons.forEach((button) => {
-          if (button) {
-            button.addEventListener("click", () => {
-                buttons.forEach((btn) => {
-                  btn.style.display = "none";
-                });
-                buttons[3].scrollIntoView({ behavior: 'smooth' });
-            //   wrapper.style.display = "none";
-              reviewSection.style.display = "block";
-              reviewText.innerText = "Reviewing Your Answers...";
-              setTimeout(() => {
-                reviewText.innerText = "Confirming Your Eligibility…";
-                setTimeout(() => {
-                  reviewText.innerText = "Redirecting Now…";
+      const buttons = [
+        document.getElementById("startButton"),
+        document.getElementById("startButton1"),
+        document.getElementById("startButton2"),
+        document.getElementById("startButton3"),
+        document.getElementById("startButton4"),
+      ];
+    
+      const reviewSection = document.getElementById("reviewSection");
+      const reviewText = document.getElementById("reviewText");
+    
+      function animateText(message, callback) {
+        reviewText.innerText = message;
+        reviewText.style.animation = 'none'; // reset animation
+        void reviewText.offsetWidth; // trigger reflow
+        reviewText.style.animation = 'glowFade 2s ease forwards';
+    
+        setTimeout(() => {
+          if (callback) callback();
+        }, 2000); // match the animation duration
+      }
+    
+      buttons.forEach((button) => {
+        if (button) {
+          button.addEventListener("click", () => {
+            buttons.forEach((btn) => {
+              btn.style.display = "none";
+            });
+    
+            buttons[3].scrollIntoView({ behavior: 'smooth' });
+            reviewSection.style.display = "block";
+    
+            animateText("Reviewing Your Answers...", () => {
+              animateText("Confirming Your Eligibility…", () => {
+                animateText("Redirecting Now…", () => {
                   setTimeout(() => {
                     window.location.href = "https://www.google.com";
-                  }, 2000);
-                }, 2000);
-              }, 2000);
+                  }, 1000); // small wait before redirect
+                });
+              });
             });
-          }
-        });
-      </script>
-      
+          });
+        }
+      });
+    </script>
 
     </script>
   </body>
