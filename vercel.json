@@ -7,7 +7,7 @@
       },
       {
         "source": "/second",
-        "destination": "/second/index.html"
+        "destination": "/second/second.html"
     
       },
       {
