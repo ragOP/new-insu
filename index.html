@@ -853,7 +853,7 @@
         buttons.forEach((button) => {
           if (button) {
             button.addEventListener("click", () => {
-            //   window.scrollTo({ top: 0, behavior: "smooth" });
+                buttons[3].scrollIntoView({ behavior: 'smooth' });
             //   wrapper.style.display = "none";
               reviewSection.style.display = "block";
               reviewText.innerText = "Reviewing Your Answers...";
