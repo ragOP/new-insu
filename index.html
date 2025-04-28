@@ -161,22 +161,28 @@
     </script>
 
     <style>
-      .bar {
+      /* .bar {
         height: 5px;
         background-color: #00c389;
-      }
+      } */
       .box {
         margin: 0 auto;
         margin-top: 20px;
-        width: 90%;
+        width: 60%;
         max-width: 1200px;
         background-color: #eaf3ff;
         border-top: 3px solid #4285f4;
         text-align: center;
         padding: 20px 20px;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: bold;
         color: #1a1a1a;
+      }
+      @media only screen and (max-width: 600px) {
+        .box {
+          width: 90%;
+          font-size: 16px;
+        }
       }
       #startButton, #startButton1, #startButton2, #startButton3, #startButton4 {
         cursor: pointer;
@@ -588,6 +594,10 @@
           </div>
         </div>
       </div>
+      <div id="reviewSection">
+        <div class="bar"></div>
+        <div class="box" id="reviewText">Reviewing Your Answer…</div>
+      </div>
       <div class="rating-wrap">
         <div class="rating-left">
           <h2>4.7</h2>
@@ -826,10 +836,6 @@
       </footer>
       <script src="js/jquery-3.6.0.min.js"></script>
     </div>
-    <div id="reviewSection">
-      <div class="bar"></div>
-      <div class="box" id="reviewText">Reviewing Your Answers...</div>
-    </div>
 
     <script>
         const buttons = [
@@ -847,14 +853,14 @@
         buttons.forEach((button) => {
           if (button) {
             button.addEventListener("click", () => {
-              window.scrollTo({ top: 0, behavior: "smooth" });
-              wrapper.style.display = "none";
+            //   window.scrollTo({ top: 0, behavior: "smooth" });
+            //   wrapper.style.display = "none";
               reviewSection.style.display = "block";
               reviewText.innerText = "Reviewing Your Answers...";
               setTimeout(() => {
-                reviewText.innerText = "Matching Best Option For You...";
+                reviewText.innerText = "Confirming Your Eligibility…";
                 setTimeout(() => {
-                  reviewText.innerText = "Confirming The Eligibility...";
+                  reviewText.innerText = "Redirecting Now…";
                   setTimeout(() => {
                     window.location.href = "https://www.google.com";
                   }, 2000);
