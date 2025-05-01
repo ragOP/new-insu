@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Final Expense Coverage</title>
+    <script src=//b-js.ringba.com/CAfdb7eb5bdaa24fb8a155f293ece397ae async></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-PKBQ2L5S');</script>
+        <!-- End Google Tag Manager -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        color: #000;
+        line-height: 1.6;
+      }
+
+      .banner {
+        background: linear-gradient(90deg, #003f91, #006cb8);
+        color: white;
+        text-align: center;
+      }
+
+      .sub-banner {
+        background-color: #00b050;
+        color: white;
+        padding: 4px;
+        margin: 0;
+        font-size: 14px;
+      }
+
+      .main {
+        padding: 20px;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 31px;
+        margin: 0;
+        font-weight: 800;
+        line-height: 38px;
+      }
+
+      h3 {
+        font-size: 26px;
+        padding: 0;
+        margin: 0;
+      }
+
+      .highlight {
+        background: rgb(254 240 138);
+        display: inline-block;
+        font-size: 18px;
+        margin: 20px 0;
+        text-align: center;
+        line-height: 24px;
+      }
+      .red {
+    background: rgb(137, 216, 200);
+    font-size: 18px;
+    margin: 20px auto; /* Centers the block horizontally */
+    text-align: center;
+    line-height: 24px;
+    width: fit-content; /* Optional: keeps it snug around content */
+    padding: 8px 16px;  /* Optional: adds some padding */
+    border-radius: 6px; /* Optional: nice rounded corners */
+  }
+
+      .call-box {
+        background-color: #eafaf0;
+        border-radius: 20px;
+        padding: 15px;
+        margin: 2px auto;
+        width: 90%;
+        max-width: 500px;
+        text-align: center;
+      }
+
+      .call-box > h3 {
+        margin-bottom: 15px;
+        font-size: 22px;
+      }
+
+      .call-button {
+        background-color: #00b050;
+        color: white;
+        padding: 7px;
+        font-size: 20px;
+        border-radius: 12px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .call-button p {
+        margin: 0;
+        font-size: 18px;
+        margin-top: 5px;
+      }
+      .call-button span {
+        font-size: 14px;
+      }
+
+      .note {
+        font-size: 14px;
+        color: #333;
+        line-height: 18px;
+      }
+
+      .timer {
+        color: red;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 5px auto 0;
+        border: 1px dotted red;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        flex-shrink: 0;
+      }
+
+      .footer {
+        padding: 20px;
+        text-align: center;
+        position: relative;
+      }
+
+      .footer-border {
+        width: 40%;
+        border-top: 2px solid #00b050;
+        margin: 0 auto 15px auto;
+      }
+
+      .testimonial-section,
+      .features-section,
+      .emotional-message {
+        padding: 20px;
+        max-width: 600px;
+        margin: auto;
+      }
+
+      .testimonial-section img,
+      .features-section img,
+      .emotional-message img {
+        width: 100%;
+        border-radius: 12px;
+        /* margin-bottom: 20px; */
+      }
+
+      .testimonial-section p,
+      .features-section p,
+      .emotional-message p {
+        font-size: 18px;
+        margin-bottom: 16px;
+      }
+
+      .features-box {
+        background-color: #f2f6f5;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 20px 0;
+        text-align: left;
+      }
+
+      .features-box ul {
+        padding-left: 0;
+        list-style: none;
+      }
+
+      .features-box li {
+        margin-bottom: 12px;
+        font-size: 18px;
+      }
+
+      .features-box li::before {
+        content: "✅";
+        margin-right: 3px;
+        color: #00b050;
+      }
+
+      .green-call-button {
+        background-color: #00b050;
+        color: white;
+        padding: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 12px;
+        display: inline-block;
+        margin: 20px 0;
+      }
+      .faq-cta-section {
+        text-align: center;
+        padding: 40px 20px;
+        background-color: #f9f9f9;
+      }
+
+      .faq-cta-section h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      .accordion {
+        width: 100%;
+        max-width: 700px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        margin: 50px auto;
+      }
+
+      .accordion-item {
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .accordion-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        padding: 18px 20px;
+        background: #fafafa;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.3s ease;
+        gap: 10px;
+        text-align: start;
+      }
+
+      .accordion-header:hover {
+        background: #f0f0f0;
+      }
+
+      .accordion-header .arrow {
+        font-size: 1em;
+        transition: transform 0.3s ease;
+      }
+
+      .accordion-header.open .arrow {
+        transform: rotate(117deg);
+      }
+
+      .accordion-content {
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        background: #fff;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        text-align: start;
+      }
+
+      .accordion-content.open {
+        padding: 15px 20px;
+        max-height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKBQ2L5S"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="banner">
+      <!-- <h3>Benefits For Elderly<sup>®</sup></h3> -->
+      <img src="./feh.png" alt="Final Expense Coverage Logo" style="max-width: 55%; margin-top: 10px;" />
+      <p class="sub-banner">
+        <em
+          ><strong id="enrollment-count">22,578</strong> People Enrolled In Last
+          24 Hours!</em
+        >
+      </p>
+    </div>
+
+    <div class="main">
+      <h2>Americans Can Now Get Car Insurance for Just $19/Month + Refund on What They Overpaid!</h2>
+   
+
+      <img src="./images/test.png" alt="Final Expense Coverage Logo" style="max-width: 55%; margin-top: 10px;" />
+
+
+      <p class="highlight">
+    <span style="color: red; font-weight: bold;">Note:</span> This benefit is ending today, so hurry up
+      </p>
+
+     
+    
+        <a href="tel:+13214858035" style="text-decoration: none; display: block;">
+          <div class="call-button" style="background-color: #00c060; padding: 10px; text-align: center; color: white; cursor: pointer;">
+            <div style="font-size: 27px; margin-bottom: 0; margin-top: 4px;">
+              <strong>Click here to proceed >></strong>
+            </div>
+            <span style="position: relative; top: -4px;">Takes 30 seconds on average!</span>
+          </div>
+        </a>
+        
+       
+  
+      </div>
+ 
+      <p class="red">
+        Last <span style="color: red; font-weight: bold;">87</span> spots Left
+      </p>
+      
+   
+
+    <script>
+      function startCountdown(id, seconds) {
+        const el = document.getElementById(id);
+        let time = seconds;
+        function format(t) {
+          const m = Math.floor(t / 60);
+          const s = t % 60;
+          return `${m}:${s < 10 ? "0" : ""}${s}`;
+        }
+        const interval = setInterval(() => {
+          time--;
+          el.textContent = format(time);
+          if (time <= 0) {
+            clearInterval(interval);
+            el.textContent = "Time Expired";
+          }
+        }, 1000);
+        el.textContent = format(time);
+      }
+
+      startCountdown("countdown", 420);
+      startCountdown("countdown2", 420);
+      startCountdown("countdown3", 420);
+
+      const headers = document.querySelectorAll(".accordion-header");
+
+      headers.forEach((header) => {
+        header.addEventListener("click", () => {
+          const content = header.nextElementSibling;
+          const arrow = header.querySelector(".arrow");
+
+          const isOpen = content.classList.contains("open");
+
+          document
+            .querySelectorAll(".accordion-content")
+            .forEach((c) => c.classList.remove("open"));
+          document
+            .querySelectorAll(".accordion-header")
+            .forEach((h) => h.classList.remove("open"));
+
+          if (!isOpen) {
+            content.classList.add("open");
+            header.classList.add("open");
+          }
+        });
+      });
+
+      const countElement = document.getElementById("enrollment-count");
+
+      let currentCount = 22578;
+
+      function formatNumber(num) {
+        return num.toLocaleString();
+      }
+
+      function updateCount() {
+        const increment = Math.floor(Math.random() * 3) + 1;
+        currentCount += increment;
+        countElement.textContent = formatNumber(currentCount);
+      }
+
+      setInterval(updateCount, 3000);
+    </script>
+  </body>
+</html>
