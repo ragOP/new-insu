@@ -31,9 +31,9 @@
       .sub-banner {
         background-color: #00b050;
         color: white;
-        padding: 4px;
+        padding-top: 4px;
         margin: 0;
-        font-size: 14px;
+        font-size: 12px;
       }
 
       .main {
@@ -273,9 +273,9 @@
       <img src="./autosss.png" alt="Final Expense Coverage Logo" style="max-width: 50%; margin-top: 10px;" />
       <p class="sub-banner">
         <em
-          ><strong id="enrollment-count">22,578</strong> People Enrolled In Last
-          24 Hours!</em
+          ><strong id="enrollment-count">62,548</strong>  Americans Took Advantage Of $19 Auto Insurance </em
         >
+        <img style="width: 70px; margin-top: 5px;" src="./images/jis.png" alt="">
       </p>
     </div>
 
@@ -311,11 +311,45 @@
         Last <span style="color: red; font-weight: bold;" id="count">87</span> spots left
       </p> -->
       
-      <div style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
-        <div class="pulse"></div><p style="text-align: center; margin-left: 10px;"></p><em> <span id="claim" style="color: #22c55e;">69</span> People Are Claiming Right Now!</em></p>
+      <div style="display: flex; justify-content: center; align-items: center; margin-top: 10px; background-color: #f2f6f5; padding: 10px; border-radius: 12px; width: 70%; max-width: 500px; margin: auto;">
+        <div class="pulse"></div><p style="text-align: center; margin-left: 10px;"></p><em> <span style="color: #22c55e;" id="count">69</span> People Are Claiming Right Now!</em></p>
     </div>
 
-    <p style="position: relative ;top:350px">
+    <div style="display: flex; align-items: center; justify-content: center; width: 100vw; margin-top: 60px;">
+      <img class="desktop-img" style="width: 90%;" src="./images/img2.png" alt="">
+    </div>
+    <style>
+      @media (min-width: 1024px) {
+      .desktop-img {
+        content: url('./images/img (1).png');
+      }
+      }
+    </style>
+
+    <p style="text-align: center; font-size: 22px; font-weight: 800;">Real-Time Quotes</p>
+
+    <!-- <img src="./images/img (1).png" alt=""> -->
+    <div style="display: flex; align-items: center;  justify-content: center; width: 100vw;">
+      <img style="width: 90%;" src="./images/img (2).png" alt="">
+    </div>
+
+    <div id="review" style="display: flex; align-items: center; justify-content: center; width: 100vw; margin-top: 10px; flex-direction: column;">
+      <img class="desktop-img" style="width: 90%;" src="./images/img1 (1).png" alt="">
+      <img class="desktop-img-hide" style="width: 90%;" src="./images/img1 (2).png" alt="">
+    </div>
+    <style>
+      @media (min-width: 1024px) {
+      #review .desktop-img {
+        content: url('./images/img (3).png');
+      }
+      #review .desktop-img-hide {
+        display: none;
+      }
+      }
+    </style>
+    <!-- <img src="./images/img (3).png" alt=""> -->
+
+    <p style="position: relative ;top:350px; text-align: center; margin-bottom: 50px;">
 
       Beware of other fraudulent & similar-looking websites that might look exactly like ours, we have no affiliation with them. This is the only official website to claim your Final Expense Coverage Help with the domain name autosavingsact.org.
             
@@ -323,16 +357,12 @@
     <script>
       const countElement = document.getElementById("enrollment-count");
       const count = document.getElementById("count");
-      let countdown = 87;
+      let countdown = 69;
       let countdownInterval = setInterval(() => {
-        countdown--;
+        countdown++;
         count.textContent = countdown;
-        if (countdown <= 0) {
-          clearInterval(countdownInterval);
-          count.textContent = "0";
-        }
       }, 3000);
-      let currentCount = 22578;
+      let currentCount = 62548;
 
       function formatNumber(num) {
         return num.toLocaleString();
