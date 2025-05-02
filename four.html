@@ -268,7 +268,7 @@
     justify-content: center;
     align-items: start;
     background-color: #f4faff;
-    width: 100%;
+    width: 94%;
     padding: 40px 10px;
     }
 
@@ -276,7 +276,7 @@
       background: #f4faff;
       padding: 20px;
       text-align: center;
-      width: 30%;
+      width: 25%;
       border-right: 1px solid #a0a0a0;
     }
 
@@ -289,6 +289,83 @@
       font-size: 14px;
       color: #000;
     }
+    .cr-reviews-section {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #eef8fb;
+}
+
+.cr-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cr-subheading {
+  font-size: 1.1rem;
+  color: #222;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+}
+
+.cr-reviews-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.cr-review-card {
+  background-color: white;
+  border: 1px solid #94dbf1;
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 300px;
+  flex: 1 1 300px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.cr-stars {
+  color: orange;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cr-review-text {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+
+.cr-reviewer {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.cr-reviewer img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cr-verified {
+  color: #00b67a;
+  font-size: 0.7rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cr-title {
+    font-size: 2rem;
+  }
+
+  .cr-review-card {
+    max-width: 100%;
+  }
+}
+
     </style>
   </head>
   <body>
@@ -336,49 +413,73 @@
   
       </div>
  
-      <!-- <p class="red">
-        Last <span style="color: red; font-weight: bold;" id="count">87</span> spots left
-      </p> -->
-      
-      <div style="display: flex; justify-content: center; align-items: center; margin-top: 10px; background-color: #f2f6f5; padding: 10px; border-radius: 12px; width: 70%; max-width: 500px; margin: auto;">
-        <div class="pulse"></div><p style="text-align: center; margin-left: 10px;"></p><em> <span style="color: #22c55e;" id="count">69</span> People Are Claiming Right Now!</em></p>
-    </div>
+      <div class="review-container">
+        <div class="review-card">
+          <img src="./images/logo (3).png" alt="Google" class="logo">
+          <div class="label">Based On</div>
+          <div class="label">22,000+<br/>Reviews</div>
+        </div>
+    
+        <div class="review-card">
+          <img src="./images/logo (2).png" alt="Consumer Affairs" class="logo">
+          <div class="label">Based On</div>
+          <div class="label">46,000+<br/>Reviews</div>
+        </div>
+    
+        <div class="review-card">
+          <img src="./images/logo (1).png" alt="Trustpilot" class="logo">
+          <div class="label">Based On</div>
+          <div class="label">31,000+<br/>Reviews</div>
+        </div>
+      </div>
 
-    <div style="display: flex; align-items: center; justify-content: center; width: 100vw; margin-top: 60px;">
-      <img class="desktop-img" style="width: 90%;" src="./images/img2.png" alt="">
-    </div>
-    <style>
-      @media (min-width: 1024px) {
-      .desktop-img {
-        content: url('./images/img (1).png');
-      }
-      }
-    </style>
+      <section class="cr-reviews-section">
+        <h1 class="cr-title">Customer Reviews</h1>
+        <p class="cr-subheading">Real feedback from real drivers. Learn how we’ve helped our customers save on auto insurance.</p>
+    
+        <div class="cr-reviews-container">
+          <!-- Review 1 -->
+          <div class="cr-review-card">
+            <div class="cr-stars">★★★★★</div>
+            <p class="cr-review-text">"Unbelievably fast and simple. Saved $350 in just minutes—wish I found this sooner!"</p>
+            <div class="cr-reviewer">
+              <img src="./images/BQzphAC3Zocc.png" alt="Mark S." />
+              <div>
+                <strong>Mark S.</strong>
+                <p style="display: flex; align-items: center; justify-content: center; gap: 3px; margin: 0;" class="cr-verified"><img style="width: 12px; height: 12px;" src="./images/QkJzRpLeT1rS.png" alt=""> Verified Buyer</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Review 2 -->
+          <div class="cr-review-card">
+            <div class="cr-stars">★★★★★</div>
+            <p class="cr-review-text">"Wow, $19 a month for full coverage? I didn’t think it was possible, but I’m glad I gave it a try!"</p>
+            <div class="cr-reviewer">
+              <img src="./images/bjE8W4qTAF5u.png" alt="Jessica L" />
+              <div>
+                <strong>Jessica L</strong>
+                <p style="display: flex; align-items: center; justify-content: center; gap: 3px; margin: 0;" class="cr-verified"><img style="width: 12px; height: 12px;" src="./images/QkJzRpLeT1rS.png" alt=""> Verified Buyer</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Review 3 -->
+          <div class="cr-review-card">
+            <div class="cr-stars">★★★★★</div>
+            <p class="cr-review-text">"Effortless! I got exactly what I needed in under 5 minutes and saved big time. Highly recommend!"</p>
+            <div class="cr-reviewer">
+              <img src="./images/qEBX079Wvj6D.png" alt="Erik R" />
+              <div>
+                <strong>Erik R.</strong>
+                <p style="display: flex; align-items: center; justify-content: center; gap: 3px; margin: 0;" class="cr-verified"><img style="width: 12px; height: 12px;" src="./images/QkJzRpLeT1rS.png" alt=""> Verified Buyer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <p style="text-align: center; font-size: 22px; font-weight: 800;">Real-Time Quotes</p>
-
-    <!-- <img src="./images/img (1).png" alt=""> -->
-    <div style="display: flex; align-items: center;  justify-content: center; width: 100vw; margin: 40px 0px;">
-      <img style="width: 90%;" src="./images/img (2).png" alt="">
-    </div>
-
-    <div id="review" style="display: flex; align-items: center; justify-content: center; width: 100vw; margin-top: 10px; flex-direction: column;">
-      <img class="desktop-img" style="width: 100%;" src="./images/img1 (1).png" alt="">
-      <img class="desktop-img-hide" style="width: 100%;" src="./images/img1 (2).png" alt="">
-    </div>
-    <style>
-      @media (min-width: 1024px) {
-      #review .desktop-img {
-        content: url('./images/img (3).png');
-      }
-      #review .desktop-img-hide {
-        display: none;
-      }
-      }
-    </style>
-    <!-- <img src="./images/img (3).png" alt=""> -->
-
-    <p style="position: relative ;top:350px; text-align: center; padding: 20px;">
+    <p style="position: relative ;top:350px; text-align: center; margin-bottom: 50px; padding: 30px;">
 
       Beware of other fraudulent & similar-looking websites that might look exactly like ours, we have no affiliation with them. This is the only official website to claim your Final Expense Coverage Help with the domain name autosavingsact.org.
             
