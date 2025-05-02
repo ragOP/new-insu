@@ -42,10 +42,10 @@
       }
 
       h2 {
-        font-size: 31px;
+        font-size: 25px;
         margin: 0;
         font-weight: 800;
-        line-height: 38px;
+        line-height: 30px;
       }
 
       h3 {
@@ -57,20 +57,21 @@
       .highlight {
         background: rgb(254 240 138);
         display: inline-block;
-        font-size: 18px;
+        font-size: 15px;
         margin: 20px 0;
+        padding: 3px;
         text-align: center;
         line-height: 24px;
       }
       .red {
-    background: rgb(137, 216, 200);
-    font-size: 18px;
-    margin: 20px auto; /* Centers the block horizontally */
+    background: rgb(182, 241, 230);
+    font-size: 14px;
+    margin: 5px auto; /* Centers the block horizontally */
     text-align: center;
     line-height: 24px;
     width: fit-content; /* Optional: keeps it snug around content */
-    padding: 8px 16px;  /* Optional: adds some padding */
-    border-radius: 6px; /* Optional: nice rounded corners */
+    padding: 8px 36px;  /* Optional: adds some padding */
+    border-radius: 28px; /* Optional: nice rounded corners */
   }
 
       .call-box {
@@ -268,7 +269,7 @@
     <!-- End Google Tag Manager (noscript) -->
     <div class="banner">
       <!-- <h3>Benefits For Elderly<sup>®</sup></h3> -->
-      <img src="./feh.png" alt="Final Expense Coverage Logo" style="max-width: 55%; margin-top: 10px;" />
+      <img src="./images/head.jpg" alt="Final Expense Coverage Logo" style="max-width: 55%; margin-top: 10px;" />
       <p class="sub-banner">
         <em
           ><strong id="enrollment-count">22,578</strong> People Enrolled In Last
@@ -278,10 +279,10 @@
     </div>
 
     <div class="main">
-      <h2>Americans Can Now Get Car Insurance for Just $19/Month + Refund on What They Overpaid!</h2>
+      <h2>Americans Can Now Get Car Insurance for Just <span style="color: #00c060;">$19/Month</span>  + Refund on What They Overpaid!</h2>
    
 
-      <img src="./images/test.png" alt="Final Expense Coverage Logo" style="max-width: 55%; margin-top: 10px;" />
+      <img src="./images/1003.jpg" alt="Final Expense Coverage Logo" style="max-width: 85%; margin-top: 10px;" />
 
 
       <p class="highlight">
@@ -291,10 +292,12 @@
      
     
         <a href="tel:+13214858035" style="text-decoration: none; display: block;">
-          <div class="call-button" style="background-color: #00c060; padding: 10px; text-align: center; color: white; cursor: pointer;">
-            <div style="font-size: 27px; margin-bottom: 0; margin-top: 4px;">
+          <div class="call-button" style="background-color: #00c060; padding: 4px; text-align: center; color: white; cursor: pointer;">
+            <a href="https://smartfinancial.com/get-fast-quote.html?aid=113846&cid=6488&form_type=3&phone_cid=default&lead_type_id=1&tid=%7Bclickid%7D&sid=AM" style="text-decoration: none; color: white; font-size: 18px; display: block; margin-bottom: 5px;">
+            <button href="" style="font-size: 24px; margin-bottom: 0; margin-top: 4px; background: none; border: none; color: white; cursor: pointer;">
               <strong>Click here to proceed >></strong>
-            </div>
+            </button>
+          </a>
             <span style="position: relative; top: -4px;">Takes 30 seconds on average!</span>
           </div>
         </a>
@@ -304,60 +307,23 @@
       </div>
  
       <p class="red">
-        Last <span style="color: red; font-weight: bold;">87</span> spots Left
+        Last <span style="color: red; font-weight: bold;" id="count">87</span> spots Left
       </p>
       
    
 
     <script>
-      function startCountdown(id, seconds) {
-        const el = document.getElementById(id);
-        let time = seconds;
-        function format(t) {
-          const m = Math.floor(t / 60);
-          const s = t % 60;
-          return `${m}:${s < 10 ? "0" : ""}${s}`;
-        }
-        const interval = setInterval(() => {
-          time--;
-          el.textContent = format(time);
-          if (time <= 0) {
-            clearInterval(interval);
-            el.textContent = "Time Expired";
-          }
-        }, 1000);
-        el.textContent = format(time);
-      }
-
-      startCountdown("countdown", 420);
-      startCountdown("countdown2", 420);
-      startCountdown("countdown3", 420);
-
-      const headers = document.querySelectorAll(".accordion-header");
-
-      headers.forEach((header) => {
-        header.addEventListener("click", () => {
-          const content = header.nextElementSibling;
-          const arrow = header.querySelector(".arrow");
-
-          const isOpen = content.classList.contains("open");
-
-          document
-            .querySelectorAll(".accordion-content")
-            .forEach((c) => c.classList.remove("open"));
-          document
-            .querySelectorAll(".accordion-header")
-            .forEach((h) => h.classList.remove("open"));
-
-          if (!isOpen) {
-            content.classList.add("open");
-            header.classList.add("open");
-          }
-        });
-      });
-
       const countElement = document.getElementById("enrollment-count");
-
+      const count = document.getElementById("count");
+      let countdown = 87;
+      let countdownInterval = setInterval(() => {
+        countdown--;
+        count.textContent = countdown;
+        if (countdown <= 0) {
+          clearInterval(countdownInterval);
+          count.textContent = "0";
+        }
+      }, 3000);
       let currentCount = 22578;
 
       function formatNumber(num) {
