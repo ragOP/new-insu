@@ -365,6 +365,80 @@
     max-width: 100%;
   }
 }
+.main-table {
+  width: 70vw;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  margin: 15px;
+}
+
+.table-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 0 2px #e0f0f8;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  height: 420px;
+}
+
+.table-container::-webkit-scrollbar {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 100%;
+  table-layout: fixed;
+}
+
+thead {
+  background-color: #1472b4;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+th, td {
+  padding: 16px 12px;
+  text-align: left;
+  font-size: 1.1rem;
+  word-wrap: break-word;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tbody td {
+  color: #333;
+}
+
+/* ✅ Make it shrink properly on smaller screens */
+@media (max-width: 600px) {
+  th, td {
+    padding: 10px 8px;
+    font-size: 0.85rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+  .main-table {
+  width: 90vw;
+}
+}
+
 
     </style>
   </head>
@@ -432,6 +506,67 @@
           <div class="label">31,000+<br/>Reviews</div>
         </div>
       </div>
+
+      <div class="main-table" style="display: flex; align-items: center; justify-content: center; margin: 0 auto; padding: 20px 0; flex-direction: column; margin-bottom: 40px;">
+        <h1>Real-Time Quotes</h1>
+  
+        <div class="table-container">   
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Model</th>
+              <th>State</th>
+              <th>Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="filter: blur(5px);">Amadu Albani</td>
+              <td>McLaren</td>
+              <td>RI</td>
+              <td>$19/mo</td>
+            </tr>
+            <tr>
+              <td style="filter: blur(5px);">Jordan French</td>
+              <td>Lucid</td>
+              <td>TX</td>
+              <td>$23/mo</td>
+            </tr>
+            <tr>
+              <td style="filter: blur(5px);">Joseph Velasquez</td>
+              <td>Volkswagen</td>
+              <td>WI</td>
+              <td>$26/mo</td>
+            </tr>
+            <tr>
+              <td style="filter: blur(5px);">Matthew Bate</td>
+              <td>Bentley</td>
+              <td>RI</td>
+              <td>$19/mo</td>
+            </tr>
+            <tr>
+              <td style="filter: blur(5px);">Adin Candler</td>
+              <td>Chevrolet</td>
+              <td>WI</td>
+              <td>$25/mo</td>
+            </tr>
+            <tr>
+              <td style="filter: blur(5px);">Donald Vance</td>
+              <td>Benz</td>
+              <td>MO</td>
+              <td>$26/mo</td>
+            </tr>
+            <tr>
+              <td style="filter: blur(5px);">Noah Forman</td>
+              <td>Porsche</td>
+              <td>NY</td>
+              <td>$19/mo</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>   
 
       <section class="cr-reviews-section">
         <h1 class="cr-title">Customer Reviews</h1>
