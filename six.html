@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Final Expense Coverage</title>
+    <script src=//b-js.ringba.com/CAfdb7eb5bdaa24fb8a155f293ece397ae async></script>
+    <script type="text/javascript" src="https://trk.reliableautopolicy.com/track.js?rtkcmpid=68162ccbc02b1e05a1ff7686"></script>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KHJ7XKK5');</script>
+  <!-- End Google Tag Manager -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        color: #000;
+        line-height: 1.6;
+      }
+
+      .banner {
+        background: linear-gradient(90deg, #003f91, #006cb8);
+        color: white;
+        text-align: center;
+      }
+
+      .sub-banner {
+        background-color: #fcf0c8;
+        color: rgb(0, 0, 0);
+        padding-top: 4px;
+        margin: 0;
+        font-size: 12px;
+      }
+
+      .main {
+        padding: 20px;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 25px;
+        margin: 0;
+        font-weight: 800;
+        line-height: 30px;
+      }
+
+      h3 {
+        font-size: 26px;
+        padding: 0;
+        margin: 0;
+      }
+
+      .highlight {
+        background: rgb(254 240 138);
+        display: inline-block;
+        font-size: 15px;
+        margin: 20px 0;
+        padding: 3px;
+        text-align: center;
+        line-height: 24px;
+      }
+      .red {
+    background: #edfeeb;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 5px auto; /* Centers the block horizontally */
+    text-align: center;
+    line-height: 24px;
+    width: fit-content; /* Optional: keeps it snug around content */
+    padding: 8px 36px;  /* Optional: adds some padding */
+    border-radius: 28px; /* Optional: nice rounded corners */
+  }
+
+      .call-box {
+        background-color: #eafaf0;
+        border-radius: 20px;
+        padding: 15px;
+        margin: 2px auto;
+        width: 90%;
+        max-width: 500px;
+        text-align: center;
+      }
+
+      .call-box > h3 {
+        margin-bottom: 15px;
+        font-size: 22px;
+      }
+
+      .call-button {
+        background-color: #00b050;
+        color: white;
+        padding: 7px;
+        font-size: 20px;
+        border-radius: 12px;
+        margin-bottom: 10px;
+        text-align: center;
+        box-shadow: 0 0 12px 4px rgba(0, 176, 80, 0.6); /* green glow */
+        transition: box-shadow 0.3s ease;
+      }
+      .call-button p {
+        margin: 0;
+        font-size: 18px;
+        margin-top: 5px;
+      }
+      .call-button span {
+        font-size: 14px;
+      }
+
+      .note {
+        font-size: 14px;
+        color: #333;
+        line-height: 18px;
+      }
+
+      .timer {
+        color: red;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 5px auto 0;
+        border: 1px dotted red;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        flex-shrink: 0;
+      }
+
+      .footer {
+        padding: 20px;
+        text-align: center;
+        position: relative;
+      }
+
+      .footer-border {
+        width: 40%;
+        border-top: 2px solid #00b050;
+        margin: 0 auto 15px auto;
+      }
+
+      .testimonial-section,
+      .features-section,
+      .emotional-message {
+        padding: 20px;
+        max-width: 600px;
+        margin: auto;
+      }
+
+      .testimonial-section img,
+      .features-section img,
+      .emotional-message img {
+        width: 100%;
+        border-radius: 12px;
+        /* margin-bottom: 20px; */
+      }
+
+      .testimonial-section p,
+      .features-section p,
+      .emotional-message p {
+        font-size: 18px;
+        margin-bottom: 16px;
+      }
+
+      .features-box {
+        background-color: #f2f6f5;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 20px 0;
+        text-align: left;
+      }
+
+      .features-box ul {
+        padding-left: 0;
+        list-style: none;
+      }
+
+      .features-box li {
+        margin-bottom: 12px;
+        font-size: 18px;
+      }
+
+      .features-box li::before {
+        content: "✅";
+        margin-right: 3px;
+        color: #00b050;
+      }
+
+      .green-call-button {
+        background-color: #00b050;
+        color: white;
+        padding: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 12px;
+        display: inline-block;
+        margin: 20px 0;
+      }
+      .faq-cta-section {
+        text-align: center;
+        padding: 40px 20px;
+        background-color: #f9f9f9;
+      }
+
+      .faq-cta-section h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      .accordion {
+        width: 100%;
+        max-width: 700px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        margin: 50px auto;
+      }
+
+      .accordion-item {
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .accordion-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        padding: 18px 20px;
+        background: #fafafa;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.3s ease;
+        gap: 10px;
+        text-align: start;
+      }
+
+      .accordion-header:hover {
+        background: #f0f0f0;
+      }
+
+      .accordion-header .arrow {
+        font-size: 1em;
+        transition: transform 0.3s ease;
+      }
+
+      .accordion-header.open .arrow {
+        transform: rotate(117deg);
+      }
+
+      .accordion-content {
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        background: #fff;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        text-align: start;
+      }
+
+      .accordion-content.open {
+        padding: 15px 20px;
+        max-height: 300px;
+      }
+      .review-container {
+        display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color: #f4faff;
+    width: 94%;
+    padding: 40px 10px;
+    }
+
+    .review-card {
+      background: #f4faff;
+      padding: 20px;
+      text-align: center;
+      width: 25%;
+      border-right: 1px solid #a0a0a0;
+    }
+
+    .logo {
+      height: 25px;
+      object-fit: contain;
+    }
+
+    .label {
+      font-size: 14px;
+      color: #000;
+    }
+    .cr-reviews-section {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #eef8fb;
+}
+
+.cr-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cr-subheading {
+  font-size: 1.1rem;
+  color: #222;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+}
+
+.cr-reviews-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.cr-review-card {
+  background-color: white;
+  border: 1px solid #94dbf1;
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 300px;
+  flex: 1 1 300px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.cr-stars {
+  color: orange;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cr-review-text {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+
+.cr-reviewer {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.cr-reviewer img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cr-verified {
+  color: #00b67a;
+  font-size: 0.7rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cr-title {
+    font-size: 2rem;
+  }
+
+  .cr-review-card {
+    max-width: 100%;
+  }
+}
+.main-table {
+  width: 70vw;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  margin: 15px;
+}
+
+.table-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 0 2px #e0f0f8;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  height: 420px;
+}
+
+.table-container::-webkit-scrollbar {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 100%;
+  table-layout: fixed;
+}
+
+thead {
+  background-color: #1472b4;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+th, td {
+  padding: 16px 12px;
+  text-align: left;
+  font-size: 1.1rem;
+  word-wrap: break-word;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tbody td {
+  color: #333;
+}
+
+/* ✅ Make it shrink properly on smaller screens */
+@media (max-width: 600px) {
+  th, td {
+    padding: 10px 8px;
+    font-size: 0.85rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+  .main-table {
+  width: 90vw;
+}
+}
+
+
+    </style>
+  </head>
+  <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHJ7XKK5"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+    <div class="banner">
+      <!-- <h3>Benefits For Elderly<sup>®</sup></h3> -->
+      <img src="./autosss.png" alt="Final Expense Coverage Logo" style="max-width: 50%; margin-top: 10px;" />
+      <p class="sub-banner">
+        <em
+          ><strong id="enrollment-count">62,548</strong>  Americans Took Advantage Of $19 Auto Insurance </em
+        >
+        <br>
+        <img style="width: 70px; margin-top: 5px;" src="./images/jis.png" alt="">
+      </p>
+    </div>
+
+    <div class="main">
+      <h2>Americans Can Now Get Car Insurance for Just <span style="color: #00c060;">$19/Month</span>  + Refund on What They Overpaid!</h2>
+   
+
+      <img src="./images/1003.jpg" alt="Final Expense Coverage Logo" style="max-width: 85%; margin-top: 10px;" />
+
+
+      <p class="highlight">
+    <span style="color: red; font-weight: bold;">Note:</span> This benefit is ending today, so hurry up
+      </p>
+
+     
+    
+        <a href="tel:+13214858035" style="text-decoration: none; display: block;">
+          <div class="call-button" style="background-color: #00c060; padding: 4px; text-align: center; color: white; cursor: pointer;">
+            <a href="https://trk.reliableautopolicy.com/click" style="text-decoration: none; color: white; font-size: 18px; display: block; margin-bottom: 5px;">
+            <div href="" style="font-size: 24px; margin-bottom: 0; margin-top: 7px; background: none; border: none; color: white; cursor: pointer;">
+              <strong>Click Here To Proceed >></strong>
+            </div>
+          </a>
+            <span style="position: relative; top: -4px;">Takes 30 seconds on average!</span>
+          </div>
+        </a>
+        
+       
+  
+      </div>
+ 
+      <div class="review-container">
+        <div class="review-card">
+          <img src="./images/logo (3).png" alt="Google" class="logo">
+          <div class="label">Based On</div>
+          <div class="label">22,000+<br/>Reviews</div>
+        </div>
+    
+        <div class="review-card">
+          <img src="./images/logo (2).png" alt="Consumer Affairs" class="logo">
+          <div class="label">Based On</div>
+          <div class="label">46,000+<br/>Reviews</div>
+        </div>
+    
+        <div class="review-card">
+          <img src="./images/logo (1).png" alt="Trustpilot" class="logo">
+          <div class="label">Based On</div>
+          <div class="label">31,000+<br/>Reviews</div>
+        </div>
+      </div>
+
+      <div class="main-table" style="display: flex; align-items: center; justify-content: center; margin: 0 auto; padding: 20px 0; flex-direction: column; margin-bottom: 40px;">
+        <h1>Real-Time Quotes</h1>
+  
+        <div class="table-container">   
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Model</th>
+              <th>State</th>
+              <th>Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="filter: blur(5px);">Amadu Albani</td>
+              <td>McLaren</td>
+              <td>RI</td>
+              <td>$19/mo</td>
+            </tr>
+            <tr>
+              <td style="filter: blur(5px);">Jordan French</td>
+              <td>Lucid</td>
+              <td>TX</td>
+              <td>$23/mo</td>
+            </tr>
+            <tr>
+              <td style="filter: blur(5px);">Joseph Velasquez</td>
+              <td>Volkswagen</td>
+              <td>WI</td>
+              <td>$26/mo</td>
+            </tr>
+            <tr>
+              <td style="filter: blur(5px);">Matthew Bate</td>
+              <td>Bentley</td>
+              <td>RI</td>
+              <td>$19/mo</td>
+            </tr>
+            <tr>
+              <td style="filter: blur(5px);">Adin Candler</td>
+              <td>Chevrolet</td>
+              <td>WI</td>
+              <td>$25/mo</td>
+            </tr>
+            <tr>
+              <td style="filter: blur(5px);">Donald Vance</td>
+              <td>Benz</td>
+              <td>MO</td>
+              <td>$26/mo</td>
+            </tr>
+            <tr>
+              <td style="filter: blur(5px);">Noah Forman</td>
+              <td>Porsche</td>
+              <td>NY</td>
+              <td>$19/mo</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>   
+
+      <section class="cr-reviews-section">
+        <h1 class="cr-title">Customer Reviews</h1>
+        <p class="cr-subheading">Real feedback from real drivers. Learn how we’ve helped our customers save on auto insurance.</p>
+    
+        <div class="cr-reviews-container">
+          <!-- Review 1 -->
+          <div class="cr-review-card">
+            <div class="cr-stars">★★★★★</div>
+            <p class="cr-review-text">"Unbelievably fast and simple. Saved $350 in just minutes—wish I found this sooner!"</p>
+            <div class="cr-reviewer">
+              <img src="./images/BQzphAC3Zocc.png" alt="Mark S." />
+              <div>
+                <strong>Mark S.</strong>
+                <p style="display: flex; align-items: center; justify-content: center; gap: 3px; margin: 0;" class="cr-verified"><img style="width: 12px; height: 12px;" src="./images/QkJzRpLeT1rS.png" alt=""> Verified Buyer</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Review 2 -->
+          <div class="cr-review-card">
+            <div class="cr-stars">★★★★★</div>
+            <p class="cr-review-text">"Wow, $19 a month for full coverage? I didn’t think it was possible, but I’m glad I gave it a try!"</p>
+            <div class="cr-reviewer">
+              <img src="./images/bjE8W4qTAF5u.png" alt="Jessica L" />
+              <div>
+                <strong>Jessica L</strong>
+                <p style="display: flex; align-items: center; justify-content: center; gap: 3px; margin: 0;" class="cr-verified"><img style="width: 12px; height: 12px;" src="./images/QkJzRpLeT1rS.png" alt=""> Verified Buyer</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Review 3 -->
+          <div class="cr-review-card">
+            <div class="cr-stars">★★★★★</div>
+            <p class="cr-review-text">"Effortless! I got exactly what I needed in under 5 minutes and saved big time. Highly recommend!"</p>
+            <div class="cr-reviewer">
+              <img src="./images/qEBX079Wvj6D.png" alt="Erik R" />
+              <div>
+                <strong>Erik R.</strong>
+                <p style="display: flex; align-items: center; justify-content: center; gap: 3px; margin: 0;" class="cr-verified"><img style="width: 12px; height: 12px;" src="./images/QkJzRpLeT1rS.png" alt=""> Verified Buyer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <p style="position: relative ;top:350px; text-align: center; margin-bottom: 50px; padding: 30px;">
+
+      Beware of other fraudulent & similar-looking websites that might look exactly like ours, we have no affiliation with them. This is the only official website to claim your Final Expense Coverage Help with the domain name autosavingsact.org.
+            
+    </p>
+    <script>
+      const countElement = document.getElementById("enrollment-count");
+      const count = document.getElementById("count");
+      let countdown = 69;
+      let countdownInterval = setInterval(() => {
+        countdown++;
+        count.textContent = countdown;
+      }, 3000);
+      let currentCount = 62548;
+
+      function formatNumber(num) {
+        return num.toLocaleString();
+      }
+
+      function updateCount() {
+        const increment = Math.floor(Math.random() * 3) + 1;
+        currentCount += increment;
+        countElement.textContent = formatNumber(currentCount);
+      }
+
+      setInterval(updateCount, 3000);
+    </script>
+  </body>
+</html>

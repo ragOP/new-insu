@@ -19,6 +19,14 @@
       {
         "source": "/four",
         "destination": "/four.html"
+      },
+      {
+        "source": "/five",
+        "destination": "/five.html"
+      },
+      {
+        "source": "/six",
+        "destination": "/six.html"
       }
     ]
   }
