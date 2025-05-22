@@ -27,6 +27,11 @@
       {
         "source": "/six",
         "destination": "/six.html"
+      },
+        {
+        "source": "/engauto1",
+        "destination": "/six.html"
       }
+      
     ]
   }
